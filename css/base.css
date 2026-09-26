@@ -1,0 +1,33 @@
+:root {
+    --color-primary: #070709;
+    --color-secondary: #60606C;
+    --color-tertiary: #2597D0;
+    --color-neutral: #FFFFFF;
+    --font-heading: "Plus Jakarta Sans", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-label: "Inter", sans-serif;
+    --color-text-primary: #070709;
+    --color-text-secondary: #60606C;
+    --color-text-light: #FFFFFF;
+    --color-danger: #D62828;
+    --color-background: #FFFFFF;
+    --color-background-secondary: #F5F5F5;
+    --color-border: #60606C;
+    --radius-small: 8px;
+    --radius-medium: 16px;
+    --radius-large: 24px;
+    --radius-pill: 999px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
