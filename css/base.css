@@ -17,6 +17,7 @@
     --radius-medium: 16px;
     --radius-large: 24px;
     --radius-pill: 999px;
+    --size-tittle-primary: 100px
 }
 
 *{
@@ -35,7 +36,8 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 15px 0;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--color-border);
 }
 
 nav>ul{
@@ -55,7 +57,7 @@ nav>ul{
     display: inline-block;
 }
 
-#contacto{
+.button{
     border: 1px solid var(--color-border);
     padding: 10px 25px;
     border-radius: var(--radius-large);
@@ -67,8 +69,19 @@ nav>ul{
     transform: scale(1.17);
 }
 
-#contacto:hover{
+.button:hover{
     background-color: var(--color-primary);
     color: var(--color-text-light);
 }
 
+h1, h2, h3{
+    font-family: var(--font-heading);
+}
+
+h1{
+    font-size: clamp(2.7rem, 1rem + 6vw, 6.25rem);
+}
+
+p {
+  font-size: clamp(1rem, 0.875rem + 0.5vw, 2.125rem);
+}

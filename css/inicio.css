@@ -1,0 +1,122 @@
+.container {
+    width: 100vw;
+    height: 90vh;
+}
+
+.hero {
+    background: linear-gradient(180deg, #779BC1 0%, #9ABFDA 58%, #CBDCEC 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero>* {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blur-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: var(--radius-pill);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#blur-button-no{
+    background: transparent;
+}
+
+.blur-button>div {
+    width: 10px;
+    height: 10px;
+    background: #2597D0;
+    border-radius: 9999px;
+}
+
+.blur-button p {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px;
+    font-size: clamp(10px, 13px, 15px);
+}
+
+.hero>h1 {
+    color: var(--color-neutral);
+    font-weight: normal;
+    text-align: center;
+    padding-inline: clamp(1rem, 5vw, 3rem);
+}
+
+.hero p {
+    color: var(--color-neutral);
+    font-weight: 100;
+    text-align: center;
+    padding-inline: clamp(1rem, 5vw, 3rem);
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-buttons+p {
+    font-size: small;
+}
+
+.black {
+    background-color: var(--color-primary);
+    color: var(--color-neutral);
+    border: 0px;
+    text-align: center;
+}
+
+.black:hover {
+    background-color: var(--color-tertiary);
+    transform: scale(1.02);
+}
+
+.white {
+    background-color: var(--color-neutral);
+    color: var(--color-primary);
+    border: 0px;
+    text-align: center;
+}
+
+.white:hover {
+    background-color: var(--color-tertiary);
+    color: var(--color-neutral);
+    transform: scale(1.02);
+}
+
+.ola {
+    background: linear-gradient(180deg, #CBDCEC 100%, #9ABFDA 58%, #779BC1 0%);
+}
+
+.ola path {
+    fill: var(--color-neutral);
+}
+
+
+
+/* Celulares */
+@media (max-width: 480px) {
+    .contact-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {}
+
+/* Computadoras */
+@media (min-width: 1024px) {}
