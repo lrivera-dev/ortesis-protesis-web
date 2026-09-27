@@ -357,6 +357,36 @@
     font-size: 15px;
 }
 
+.testimo {
+    gap: 10px;
+}
+
+.testi {
+    font-style: italic;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+}
+
+.testi-persona {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testi-persona>div>* {
+    display: inline-block;
+    margin: 0;
+}
+
+.testi-persona>div>p:first-child {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.testi-persona>div>p {
+    font-size: 14px;
+}
+
 /* Celulares */
 @media (max-width: 768px) {
     .contact-buttons {
@@ -390,8 +420,12 @@
         max-width: 280px;
     }
 
-    .encabezado{
+    .encabezado {
         margin-bottom: 50px;
+    }
+
+    .testimo {
+        max-width: 290px;
     }
 
 
@@ -399,9 +433,21 @@
 
 @media (max-width: 1024px) {
 
-     .compromiso-grid {
+    .compromiso-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+    .soluciones-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .soluciones-grid>.card:last-child {
+        grid-column: span 2;
+        justify-self: center;
+        width: 100%;
+    }
+
+
 
 }
