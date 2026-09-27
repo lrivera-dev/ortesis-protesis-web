@@ -177,6 +177,7 @@
     padding: 10px 20px;
     border-radius: var(--radius-pill);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
 .info-card {
@@ -363,8 +364,12 @@
 
 .testi {
     font-style: italic;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 
+}
+
+.testiborder {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    padding-inline: 0px;
 }
 
 .testi-persona {
@@ -387,8 +392,43 @@
     font-size: 14px;
 }
 
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gray {
+    background: #F5F5F5;
+    max-width: 80%;
+    min-height: 0;
+    padding: 0px;
+    margin-top: 65px;
+    border-radius: var(--radius-large);
+    text-align: center;
+    padding: 100px 200px;
+}
+
+.gray p {
+    color: var(--color-secondary);
+}
+
+.blanco {
+    background-color: var(--color-neutral);
+
+}
+
+.blanco>p {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.bp {
+    font-size: 10px !important;
+}
+
 /* Celulares */
-@media (max-width: 768px) {
+@media (max-width: 956px) {
     .contact-buttons {
         flex-direction: column;
         gap: 10px;
@@ -428,10 +468,15 @@
         max-width: 290px;
     }
 
-
+    .gray {
+        padding: 10px 10px;
+    }
 }
 
-@media (max-width: 1024px) {
+
+
+
+@media (min-width: 980px) and (max-width: 1040px) {
 
     .compromiso-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -442,12 +487,18 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+
     .soluciones-grid>.card:last-child {
         grid-column: span 2;
         justify-self: center;
         width: 100%;
     }
 
+    .gray {
+        background: #F5F5F5;
+        max-width: 50%;
+        min-height: 0;
+    }
 
 
 }
