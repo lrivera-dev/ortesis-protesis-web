@@ -1,0 +1,85 @@
+.hero-productos {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 0 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-productos > * {
+    display: inline-block;
+    margin: 0px;
+}
+
+.hero-productos h1 {
+    margin-bottom: 0px;
+    color: var(--color-primary);
+}
+
+.hero-productos p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 750px;
+}
+
+.blur-button {
+    background: #f5f5f5;
+    backdrop-filter: blur(6px);
+    border-radius: var(--radius-pill);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: #f5f5f5;
+}
+
+.blur-button > div {
+    width: 10px;
+    height: 10px;
+    background: var(--color-tertiary);
+    border-radius: 9999px;
+}
+
+.blur-button p {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.filter-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto 50px auto;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.filter-btn {
+    background-color: var(--color-background-secondary);
+    border: 1px solid var(--color-border);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-label);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border-color: var(--color-primary);
+}
