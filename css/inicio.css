@@ -292,19 +292,86 @@
     text-align: center;
 }
 
+.gris {
+    margin-top: 150px;
+    background-color: #F3F3F4;
+}
+
+/*section id = compromiso*/
+.compromiso-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card-compromiso {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--color-neutral);
+    padding: 35px 45px;
+    border-radius: var(--radius-large);
+    max-width: 255px;
+}
+
+.card-compromiso>* {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.card-compromiso>h4 {
+    font-size: 20px;
+}
+
+.card-compromiso>p {
+    font-size: 13px;
+    color: var(--color-secondary);
+}
+
+.estadisticas {
+    display: flex;
+    gap: 65px;
+    border-top: 1px solid #bebecc86;
+    margin: 50px 0px;
+    margin-top: 70px;
+    padding: 30px 20px;
+}
+
+.estadisticas>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.estadisticas>div>* {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+.estadisticas>div>p {
+    color: var(--color-secondary);
+    font-size: 15px;
+}
 
 /* Celulares */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .contact-buttons {
         flex-direction: column;
         gap: 10px;
     }
-}
 
-/* Tablets */
-@media (max-width: 768px) {
-    .soluciones-grid {
-        grid-template-columns: 1fr;
+    .compromiso-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .estadisticas {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .caracteristicas {
@@ -314,7 +381,27 @@
         text-align: center;
         padding: 20px;
     }
+
+    .soluciones-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-compromiso {
+        max-width: 280px;
+    }
+
+    .encabezado{
+        margin-bottom: 50px;
+    }
+
+
 }
 
-/* Computadoras */
-@media (min-width: 1024px) {}
+@media (max-width: 1024px) {
+
+     .compromiso-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+}
