@@ -231,7 +231,7 @@ p {
 
 .footer-contact-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 7px;
     font-size: 11px;
     line-height: 1.4;
