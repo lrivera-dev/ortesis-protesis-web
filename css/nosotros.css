@@ -93,14 +93,12 @@ nav a[aria-current="page"] {
   margin-bottom: 16px;
 }
 
-/* Misión y visión */
 .mv-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-/* Valores */
 .valores-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -126,7 +124,6 @@ nav a[aria-current="page"] {
   color: var(--color-text-secondary);
 }
 
-/* Trayectoria: línea de tiempo */
 .linea-tiempo {
   list-style: none;
   margin: 0 auto;
@@ -169,7 +166,6 @@ nav a[aria-current="page"] {
   color: var(--color-text-secondary);
 }
 
-/* Equipo */
 .equipo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,7 +200,6 @@ nav a[aria-current="page"] {
   margin-bottom: 12px;
 }
 
-/* Metodología: pasos numerados (es una secuencia real) */
 .pasos {
   list-style: none;
   margin: 0;
@@ -236,7 +231,6 @@ nav a[aria-current="page"] {
   font-weight: 700;
 }
 
-/* Llamada a la acción */
 .cta {
   text-align: center;
   max-width: 760px;
@@ -274,7 +268,6 @@ nav a[aria-current="page"] {
   background: var(--color-background);
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .valores-grid,
   .pasos {
