@@ -1,3 +1,86 @@
+.cta-banner {
+    width: 100%;
+    max-width: 100%;
+    margin: 80px 0;
+    padding: 80px 20px; 
+    text-align: center;
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(37, 151, 208, 0.10) 40%, rgba(255, 255, 255, 0) 90%);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-banner .blur-button {
+    background: var(--color-background-secondary);
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 10px 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    margin: 0 auto;
+}
+.cta-banner > * {
+    max-width: 1200px;
+    width: 100%  
+}
+
+.cta-banner .blur-button > div {
+    width: 10px;
+    height: 10px;
+    background: var(--color-tertiary);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cta-banner .blur-button p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.cta-banner h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 1.5vw + 1.5rem, 2.6rem);
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.cta-banner p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: var(--color-text-secondary);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cta-beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    border-top: none;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.cta-beneficios span {
+    display: inline-flex;
+    align-items: center;
+}
+
 .formulario {
     background-color: var(--color-neutral);
     margin: 50px 100px;
@@ -145,5 +228,37 @@ iframe{
 @media (max-width: 956px) {
     .container{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-banner {
+        width: 100%;
+        max-width: 100%;
+        margin: 40px 0;
+        padding: 50px 15px 70px 15px;
+        box-sizing: border-box; 
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(37, 151, 208, 0.12) 30%, rgba(255, 255, 255, 0) 85%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;  
+    }
+
+    .cta-banner > * {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-beneficios {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .cta-beneficios span:nth-child(even) {
+        display: none;
     }
 }
