@@ -230,7 +230,110 @@ iframe {
     border-radius: var(--radius-medium);
 }
 
+.faq {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+.faq-encabezado {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.faq-etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 16px;
+    padding: 6px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.faq-punto {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-tertiary);
+}
+
+.faq-encabezado h2 {
+    margin: 0 0 12px;
+    letter-spacing: -0.03em;
+}
+
+.faq-subtitulo {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+/* Tarjetas */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+    /* cada tarjeta mide lo que necesita su texto */
+}
+
+.faq-card {
+    padding: 28px;
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 32px;
+    box-shadow: 0 6px 20px rgba(7, 7, 9, 0.06);
+}
+
+.faq-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #E3F1F9;
+    color: var(--color-tertiary);
+}
+
+.faq-card h3 {
+    margin: 0 0 12px;
+    font-size: 1rem !important;
+    /* base.css fuerza el tamaÃ±o de h3 con !important */
+    line-height: 1.4;
+}
+
+.faq-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+.faq-card p.faq-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-tertiary);
+}
+
 @media (max-width: 956px) {
+
     .container {
         flex-direction: column;
     }
@@ -243,14 +346,18 @@ iframe {
         margin: 0px 0px;
     }
 
-    .info-form{
+    .info-form {
         padding: 20px 30px;
         margin-bottom: 20px;
         text-align: center;
     }
 
-    iframe{
+    iframe {
         width: 100%;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
     }
 
 }
